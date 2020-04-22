@@ -5,11 +5,12 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="justSetAnAlarm(); setInterval('justSetAnAlarm()', 1000)">
 
     <header></header>
 
     <main>
+        <span id="clock">&nbsp;</span>
         <h1>Changing variables!</h1>
         <h3>Enter the circle's diameter in centimeters here:</h3>
         <input type="number" id="diameter">
